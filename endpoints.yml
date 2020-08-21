@@ -1,0 +1,76 @@
+# This file contains the different endpoints your bot can use.
+
+# Server where the models are pulled from.
+# https://rasa.com/docs/rasa/user-guide/running-the-server/#fetching-models-from-a-server/
+
+#models:
+#  url: http://my-server.com/models/default_core@latest
+#  wait_time_between_pulls:  10   # [optional](default: 100)
+
+# Server which runs your custom actions.
+# https://rasa.com/docs/rasa/core/actions/#custom-actions/
+
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+
+# Tracker store which is used to store the conversations.
+# By default the conversations are stored in memory.
+# https://rasa.com/docs/rasa/api/tracker-stores/
+
+#tracker_store:
+#    type: redis
+#    url: <host of the redis instance, e.g. localhost>
+#    port: <port of your redis instance, usually 6379>
+#    db: <number of your database within redis, e.g. 0>
+#    password: <password used for authentication>
+#    use_ssl: <whether or not the communication is encrypted, default false>
+
+# tracker_store:
+#   type: MemoryTrakerStore.MyTrackerStore
+#   url: mongodb+srv://mdMonir:raju0183@chat-dat.aar0m.mongodb.net/Chat-dat?retryWrites=true&w=majority
+#   db: Chat-dat
+#   username: mdMonir
+#   password: raju0183
+
+# tracker_store:
+#     type: MemoryTrakerStore.SQLTrackerStore
+#     dialect: "sqlite"  # the dialect used to interact with the db
+#     url: "sqlite:///./rokomari.db"  # (optional) host of the sql db, e.g. "localhost"
+#     db: "rokomari.db"  # path to your db
+#     username:  # username used for authentication
+#     password:  # password used for authentication
+#     query: # optional dictionary to be added as a query string to the connection URL
+#       driver: my-driver
+
+tracker_store:
+    type: MemoryTrakerStore.InMemoryTrackerStore
+    url: localhost  # (optional) host of the sql db, e.g. "localhost"
+    # db: "rokomari.db"  # path to your db
+    # username:  # username used for authentication
+    # password:  # password used for authentication
+    # query: # optional dictionary to be added as a query string to the connection URL
+    #   driver: my-driver
+
+# tracker_store:
+#     type: MemoryTrakerStore.
+#     url: mongodb://localhost:27017
+#     db: rasa
+#     username: ""
+#     password: ""
+#     auth_source: ""
+
+#tracker_store:
+#    type: mongod
+#    url: <url to your mongo instance, e.g. mongodb://localhost:27017>
+#    db: <name of the db within your mongo instance, e.g. rasa>
+#    username: <username used for authentication>
+#    password: <password used for authentication>
+
+# Event broker which all conversation events should be streamed to.
+# https://rasa.com/docs/rasa/api/event-brokers/
+
+#event_broker:
+#  url: localhost
+#  username: username
+#  password: password
+#  queue: queue

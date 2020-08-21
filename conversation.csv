@@ -1,0 +1,11 @@
+Sender ID,Sender Message,Bot Reply,User Intent,Chatbot Utter,Date,confidence
+Me,hi,Hey! How are you?,greet,utter_greet,2020-08-21 16:26:17.342259,0.9741613864898682
+Me,bye,Bye,goodbye,utter_goodbye,2020-08-21 16:26:48.519249,0.9367343783378601
+Me,hi,Hey! How are you?,greet,utter_greet,2020-08-21 19:58:30.788252,0.9741613864898682
+Me,bye,Here is something to cheer you up:,goodbye,utter_cheer_up,2020-08-21 19:59:16.153194,0.9367343783378601
+Me,no,Bye,deny,utter_goodbye,2020-08-21 19:59:28.248455,0.9669654965400696
+Me,hi,Hey! How are you?,greet,utter_greet,2020-08-21 20:07:26.528736,0.9741613864898682
+Me,/mood_great,"Great, carry on!",mood_great,utter_happy,2020-08-21 20:07:35.179708,1.0
+Me,hello,Hey! How are you?,greet,utter_greet,2020-08-21 20:09:48.039372,0.9712015986442566
+Me,/mood_unhappy,Did that help you?,mood_unhappy,utter_did_that_help,2020-08-21 20:09:58.614031,1.0
+Me,no,Bye,deny,utter_goodbye,2020-08-21 20:10:07.164061,0.9669654965400696
